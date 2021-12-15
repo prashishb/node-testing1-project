@@ -41,6 +41,10 @@ function trimPropertiesMutation(obj) {
  */
 function findLargestInteger(integers) {
   // ✨ implement
+  const largest = integers.reduce((acc, curr) => {
+    return curr.integer > acc.integer ? curr : acc;
+  });
+  return largest.integer;
 }
 
 class Counter {
