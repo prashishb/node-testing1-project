@@ -138,8 +138,6 @@ class Car {
    */
   drive(distance) {
     // ✨ implement
-    // takes distance we want car to drive
-    // returns the updated odomter value
     const milesCanDrive = this.tank * this.mpg;
     if (milesCanDrive >= distance) {
       this.odometer += distance;
