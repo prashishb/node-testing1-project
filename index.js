@@ -76,6 +76,7 @@ class Counter {
       count = 0;
     }
     return count;
+  }
 }
 
 class Seasons {
@@ -84,6 +85,7 @@ class Seasons {
    */
   constructor() {
     // ✨ initialize whatever properties are needed
+    this.seasons = ['summer', 'fall', 'winter', 'spring'];
   }
 
   /**
@@ -100,6 +102,9 @@ class Seasons {
    */
   next() {
     // ✨ implement
+    let nextSeason = this.seasons.shift();
+    this.seasons.push(nextSeason);
+    return nextSeason;
   }
 }
 
