@@ -71,7 +71,11 @@ class Counter {
    */
   countDown() {
     // ✨ implement
-  }
+    let count = this.initialNumber--;
+    if (count < 0) {
+      count = 0;
+    }
+    return count;
 }
 
 class Seasons {
